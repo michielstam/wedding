@@ -1,5 +1,122 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='author', content='Script Tutorials')
+    title Bootstrap one-page template with Parallax effect | Script Tutorials
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    // attach CSS styles
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+  body
+    // navigation panel
+    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse-main')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Your Brand Name
+        #navbar-collapse-main.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#home') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#services') Services
+            li
+              a(href='#information') Information
+            li
+              a(href='#google_map') Contact
+            li
+              a(href='http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/') Back to tutorial
+        // /.navbar-collapse
+      // /.container-fluid
+    // first section - Home
+    #home.home
+      .text-vcenter
+        h1 Hello World
+        h3 This is bootstrap-based layout
+        a.btn.btn-default.btn-lg(href='#about') Continue
+    // /first section
+    // second section - About
+    #about.pad-section
+      .container
+        .row
+          .col-sm-6
+            img(src='images/logo.png', alt='')
+          .col-sm-6.text-center
+            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.
+            p.lead
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.
+    // /second section
+    // third section - Services
+    #services.pad-section
+      .container
+        h2.text-center Our Services
+        hr
+        .row.text-center
+          .col-sm-3.col-xs-6
+            i.glyphicon.glyphicon-cloud  
+            h4 Service 1
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.
+          .col-sm-3.col-xs-6
+            i.glyphicon.glyphicon-leaf  
+            h4 Service 2
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.
+          .col-sm-3.col-xs-6
+            i.glyphicon.glyphicon-phone-alt  
+            h4 Service 3
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.
+          .col-sm-3.col-xs-6
+            i.glyphicon.glyphicon-bullhorn  
+            h4 Service 4
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.
+    // /third section
+    // fourth section - Information
+    #information.pad-section
+      .container
+        .row
+          .col-sm-6
+            .panel.panel-default
+              .panel-heading
+                h2.panel-title Additional information
+              .panel-body.lead
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+          .col-sm-6
+            .panel.panel-default
+              .panel-heading
+                h2.panel-title Additional information
+              .panel-body.lead
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
+    // /fourth section
+    // fifth section
+    #services.pad-section
+      .container
+        .row
+          .col-sm-12.text-center
+            h3 Parallax scrolling effect is in action
+            h4 The next is the address on Google maps
+    // /fifth section
+    // google map
+    #google_map
+    // /google map
+    // footer
+    footer
+      hr
+      .container
+        p.text-right Copyright © Your Company 2014
+    // /footer
+    // attach JavaScripts
+    script(src='js/jquery-1.11.3.js') 
+    script(src='js/bootstrap.min.js')
+    script(src='//maps.google.com/maps/api/js?sensor=true')
+    script(src='js/main.js')
