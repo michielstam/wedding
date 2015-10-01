@@ -16,6 +16,6 @@
     "serve-favicon": "~2.3.0"
   },
   "scripts": {
-	"start": "node bin\server.js"
+	"start": "node bin/server.js"
 	}
 }
