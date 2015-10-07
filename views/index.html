@@ -33,7 +33,6 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#information">Information</a></li>
           <li><a href="#google_map">Contact</a></li>
-          <li><a href="http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/">Back to tutorial</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -102,20 +101,66 @@
         <div class="col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
+              <h2 class="panel-title">Aanmelden</h2>
             </div>
             <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">Additional information</h2>
-            </div>
-            <div class="panel-body lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+              <form class="form-horizontal" id="registerHere" method='post' action='' >
+				<fieldset>
+										
+					<div class="control-group">
+					<label class="control-label">Naam</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="user_name" rel="popover" data-content="Vul hier je naam in." data-original-title="Full name">
+					</div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label">Email</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="user_email" name="user_email" rel="popover" data-content="Wat is je email adres?" data-orgin-title="Email">
+					</div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label">Personen</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="user_count" name="user_count" rel="popover" data-content="Met hoeveel personen?" data-orgin-title="Personen">
+					</div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label">Aanmelden voor:</label>
+					<div class="controls">
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Kerkdienst</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Receptie</label>
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="">Feest</label>
+						</div>
+					</div>
+					</div>
+					
+					<div class="control-group">
+					<label class="control-label"></label>
+					<div class="controls">
+					<button type="submit" class="btn btn-success" >Aanmelden</button>
+					</div>
+					</div>
+						
+				</fieldset>
+				</form>
+				
+				<div class="control-group success">
+				<!-- /succes section -->
+				</div>
+				
+				<div class="control-group error">
+				<!-- /error section -->
+				</div>
+				
             </div>
           </div>
         </div>
