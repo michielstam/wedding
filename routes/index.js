@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/todo';
+var connectionString = process.env.DATABASE_URL || 'postgres://prmgswwteyqepp:O0Wu5eZhZKEzrtdwu7iMpi2cMe@ec2-54-197-241-239.compute-1.amazonaws.com:5432/d4ulen39c8bnhs';
 
 
 
@@ -46,8 +46,8 @@ router.post('/api/v1/todos', function(req, res) {
     });
 });
 
-//read
-router.get('/api/v1/todos', function(req,res) {
+//read guest
+router.get('/gasten', function(req,res) {
 	
 	var results = [];
 	
@@ -55,7 +55,7 @@ router.get('/api/v1/todos', function(req,res) {
 	pg.connect(connectionString, function(err, client, done) {
 		
 		// SQL Query > Select Data
-		var query = client.query("SELECT * FROM items ORDER BY id ASC;")
+		var query = client.query("SELECT * FROM dbo.gasten ORDER BY id ASC;")
 		
 		// Stream results back one row at a time
 		query.on('row', function(row) {
