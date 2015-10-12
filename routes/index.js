@@ -88,7 +88,10 @@ router.get('/gasten', function(req, res) {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f16b0b9c795ade08125662629e6c5b2c0f697abc
 //read guest
 router.get('/gasten', function(req,res) {
 	
