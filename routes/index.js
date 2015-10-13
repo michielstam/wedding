@@ -87,40 +87,4 @@ router.get('/gasten', function(req, res) {
     });
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f16b0b9c795ade08125662629e6c5b2c0f697abc
-//read guest
-router.get('/gasten', function(req,res) {
-	
-	var results = [];
-	
-	// Get a Postgres client from connection pool
-	pg.connect(connectionString, function(err, client, done) {
-		
-		// SQL Query > Select Data
-		var query = client.query("SELECT * FROM dbo.gasten ORDER BY id ASC;")
-		
-		// Stream results back one row at a time
-		query.on('row', function(row) {
-			results.push(row);
-		});
-		
-		// After all data is returned, close connection
-		query.on('end', function() {
-			client.end();
-			return res.json(results);
-		});
-		
-		// Handle Errors
-		if(err) {
-			console.log(err);
-		}
-	});
-});
-
-
->>>>>>> f16b0b9c795ade08125662629e6c5b2c0f697abc
 module.exports = router;
